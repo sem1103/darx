@@ -41,6 +41,9 @@ nav ul li a{
     padding: 12px 7px;
    transition: background  .1s linear; 
 }
+.active{
+    background-color: var(--blue);
+}
 nav ul li{
     padding: 0 15px;
 }
@@ -85,6 +88,7 @@ nav ul li{
 
 main{
     padding: 45px 0 120px 0;
+    box-shadow: 0 3px 10px #151517;
 }
 h2{
     font-family: Georgia;
@@ -231,6 +235,7 @@ button{
     color: #fff;
     border: none;
     float: right;
+    cursor: pointer;
 }
 #last__footer{
     background-color: #2096da;
@@ -241,6 +246,36 @@ button{
     justify-content: space-between;
     max-width: 271px;
    
+}
+
+#footer__icons{
+    display: flex;
+    max-width: 960px;
+    flex-direction: row;
+    margin: -128px auto 0 auto;
+    justify-content:space-around;
+    flex-wrap: wrap;
+ 
+    
+    
+}
+.one1,.two2,.three3,.four4,.five5,.six6{
+    font-size: 30px;
+    padding: 20px;
+    background-color: rgba(33, 33, 32, .8);
+    border-radius: 50%;
+    margin: 10px;
+    color:#7c7c7c;
+
+}
+.one1{
+    padding: 20px 26px;
+}
+.three3{
+    padding: 20px 23px;
+}
+.six6{
+    padding: 20px 14x;
 }
 
 /*--Tablet---*/
@@ -305,7 +340,8 @@ button{
         grid-row: 2/3;
         align-items: center;
     }
-        
+   
+    
     
 }
 
@@ -387,5 +423,24 @@ button{
    
    
  }
+ #footer__icons{
+     margin: -136px auto 0 auto;
+ }
+ .one1,.two2,.three3,.four4,.five5,.six6{
+    font-size: 50px;
+    box-shadow: 0 -2px 10px  #212123;
+    transition: box-shadow .2s linear,color .2s linear,transform .2s linear;
+    }
+    .one1{
+        padding: 20px 30px;
+    }
+    .six6{
+        padding: 20px 15px;
+    }
+    #footer__icons a i:hover{
+        box-shadow: 0 2px 10px var(--blue);
+        color: var(--blue);
+        transform:rotate(360deg);
+    }
 }
 
